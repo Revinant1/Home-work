@@ -30,7 +30,6 @@ input, button, summary {
 .heder-left {
     display: flex;
     flex-direction: row;
-    height: 80px;
 }
 .logowrap{
     display: flex;
@@ -213,15 +212,14 @@ input, button, summary {
 
 .heder-right {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    height: 80px;
+    align-items: center;
+    justify-content: center;
+    height: 66px;
 }
 
 .basket {
-    margin-top: 20px;
-    margin-right: 26px;
+    margin-top: 8px;
+    margin-right: 10px;
     width: 32px;
     height: 29px;
 }
@@ -236,9 +234,7 @@ input, button, summary {
     border: #f16d7f solid 1px;
     display: flex;
     justify-content: center;
-    margin-top: 13px;
     background-color: #f16d7f;
-    width: 130px;
     height: 38px;
 }
 
@@ -250,8 +246,7 @@ input, button, summary {
     font-weight: 400;
     text-align: center;
     width: 100%;
-    margin-left: 5px;
-    padding-top: 6px;
+    padding: 8px 20px;
     line-height: normal;
     letter-spacing: .7px;
 }
@@ -740,7 +735,6 @@ input, button, summary {
     display: flex;
     justify-content: center;
     background-color: #f16d7f;
-    padding: 0px 45px;
 }
 
 .button-productwrap a {
@@ -753,6 +747,7 @@ input, button, summary {
     width: 100%;
     text-align: center;
     letter-spacing: 0.5px;
+    padding: 0 24px;
 }
 
 .button-productwrap a:hover {
@@ -1017,7 +1012,7 @@ input, button, summary {
     border-bottom-right-radius: 27px;
     background-color: #f16d7f;
     width: 104px;
-    height: 48px;
+    height: 46px;
     font-family: 'Lato', sans-serif;
     color: #ffffff;
     font-size: 14px;
@@ -2077,8 +2072,6 @@ details[open] summary:after{
     line-height: 24px;
 }
 .single-product-diteilsetup-buttaddtocard{
-    width: 537px;
-    height: 55px;
     border: 1px solid #ef5b70;
     background-color: #ffffff;
     margin: 28px 0 122px 0;
@@ -2086,17 +2079,40 @@ details[open] summary:after{
 .single-product-diteilsetup-buttaddtocard a{
     display: flex;
     justify-content: center;
-    padding: 7px 0;
     color: #ef5b70;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 700;
+    padding: 11px 210px;
+    position: relative;
 }
-.single-product-diteilsetup-buttaddtocard img{
-    width: 26px;
+.single-product-diteilsetup-buttaddtocarda:before{
+    content: "";
+    position: absolute;
     height: 24px;
-    padding: 5px;
+    width: 26px;
+    background: url(../img/singl-product-woven/forma_1_copy.png) no-repeat;
+    background-size: 23px;
+    top: 20px;
+    left: 182px;
+
 }
+.single-product-diteilsetup-buttaddtocard:hover .single-product-diteilsetup-buttaddtocarda:before{
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 26px;
+    background: url(../img/product/basket1.svg) no-repeat;
+    background-size: 23px;
+    top: 20px;
+    left: 182px;
+}
+
+.single-product-diteilsetup-buttaddtocard a:hover{
+    background: #f16d7f;
+    color: #ffffff;
+}
+
 .single-product-youmaylikealso{
     color: #4d4d4d;
     font-family: 'Lato', sans-serif;
