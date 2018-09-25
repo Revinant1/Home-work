@@ -435,10 +435,12 @@ input, button, summary {
 .mega-menubaner video{
     width: 100%;
     height: 100%;
-    margin: -13px 0 0 -22px;
 }
 .mega-menubaner video:hover{
+    width: 255px;
+    height: 118px;
     border: #f16d7f 2px solid;
+    padding: 0;
     box-shadow: 1px 6px 17px 0px #daa2aa;
     box-sizing: border-box;
 }
@@ -1949,6 +1951,20 @@ details[open] summary:after{
     border-left: #e8e8e8 solid 1px;
     border-top: #e8e8e8 solid 1px;
 }
+.sigel-produkt-dropcolorsize span{
+    margin-left: 37px;
+}
+.drop-listcolor:hover{
+    border-left: #f16d7f solid 2px;
+}
+.drop-listcolor input{
+    display: none;
+}
+.drop-listcolor input:checked + span{
+    border-bottom: #f16d7f solid 1px;
+    color: #f16d7f;
+
+}
 .sigel-produkt-dropcolorsize{
     position: relative;
     width: 144px;
@@ -1960,20 +1976,13 @@ details[open] summary:after{
     justify-content: center;
     margin-top: 16px;
 }
-.sigel-produkt-dropcolorsize span{
-    margin-left: 37px;
-}
 
 .sigel-produkt-dropcolorsize:hover .drop-listcolorsize-wrap{
     display: flex;
     flex-direction: column;
  }
-.drop-listcolor span{
-    position: relative;
-    margin-left: 37px;
-}
+
 .drop-listcolor:hover{
-    border-left: #f16d7f 2px solid;
     color: #f16d7f;
 }
 .size-list:hover{
@@ -1997,8 +2006,8 @@ details[open] summary:after{
     height: 10px;
     background: url("../img/icon/icons8-red40.png");
     background-size:  10px;
-    left: -19px;
-    top: 4px;
+    left: 18px;
+    top: 7px;
 }
 #black::before{
     position: absolute;
@@ -2007,8 +2016,8 @@ details[open] summary:after{
     height: 10px;
     background: url(../img/icon/icons8-black40.png);
     background-size: 10px;
-    left: -19px;
-    top: 4px;
+    left: 18px;
+    top: 31px;
 }
 #white::before{
     position: absolute;
@@ -2017,8 +2026,8 @@ details[open] summary:after{
     height: 10px;
     background: url(../img/icon/icons8-white40.png);
     background-size: 10px;
-    left: -19px;
-    top: 4px;
+    left: 18px;
+    top: 55px;
 }
 #blue::before{
     position: absolute;
@@ -2027,8 +2036,8 @@ details[open] summary:after{
     height: 10px;
     background: url(../img/icon/icons8-blu40.png);
     background-size: 10px;
-    left: -19px;
-    top: 4px;
+    left: 18px;
+    top: 80px;
 }
 #green::before{
     position: absolute;
@@ -2037,8 +2046,8 @@ details[open] summary:after{
     height: 10px;
     background: url(../img/icon/icons8-grin40.png);
     background-size: 10px;
-    left: -19px;
-    top: 4px;
+    left: 18px;
+    top: 104px;
 }
 #gray::before{
     position: absolute;
@@ -2047,11 +2056,17 @@ details[open] summary:after{
     height: 10px;
     background: url(../img/icon/icons8-grey40.png);
     background-size: 10px;
-    left: -19px;
-    top: 4px;
+    left: 18px;
+    top: 128px;
 }
 .single-product-diteilsetup-size{
     margin: 0 53px;
+}
+.size-list{
+    margin-left: 37px;
+}
+.size-list input{
+    display: none;
 }
 .single-product-diteilsetup-quantity{
     display: flex;
