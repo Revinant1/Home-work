@@ -432,15 +432,15 @@ input, button, summary {
 .mega-menutext a:first-child{
     margin-bottom: 8px;
 }
+
 .mega-menubaner video{
     width: 100%;
     height: 100%;
+    margin: -14px 0 -9px -19px;
 }
+
 .mega-menubaner video:hover{
-    width: 255px;
-    height: 118px;
     border: #f16d7f 2px solid;
-    padding: 0;
     box-shadow: 1px 6px 17px 0px #daa2aa;
     box-sizing: border-box;
 }

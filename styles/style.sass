@@ -1,0 +1,2008 @@
+*
+  margin: 0
+  padding: 0
+
+
+input, button, summary
+  outline: none
+
+
+.container-heder
+  border: solid 1px #ececec
+  box-sizing: border-box
+  background-color: #ffffff
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17)
+  width: 100%
+  height: 100px
+
+
+.heder
+  display: flex
+  justify-content: space-between
+  padding-top: 19px
+  margin: 0 auto
+  width: 1140px
+  height: 100px
+
+
+.heder-left
+  display: flex
+  flex-direction: row
+
+.logowrap
+  display: flex
+
+.logo
+  background: url("../img/logo.png") no-repeat
+  width: 59px
+  height: 51px
+  margin-top: 4px
+
+
+.heder-left p
+  margin-left: 9px
+  margin-top: 13px
+  font-family: 'Lato', sans-serif
+  text-transform: uppercase
+  color: #222222
+  font-size: 27px
+  font-weight: 300
+  text-align: center
+  letter-spacing: 2px
+
+
+.heder-left span
+  margin-right: 30px
+  margin-top: 13px
+  font-family: 'Lato', sans-serif
+  color: #f16d7f
+  font-size: 27px
+  font-weight: 900
+  text-align: center
+
+
+.heder-left a
+  text-decoration: none
+
+
+.top-drop
+  margin-top: 13px
+  border-bottom-left-radius: 3px
+  border-top-left-radius: 3px
+  border-style: solid solid solid
+  border: 1px #e6e6e6
+  box-sizing: border-box
+  background: -webkit-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: -moz-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: -o-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: -ms-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%)
+  background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%)
+  width: 87px
+  height: 38px
+
+
+.top-drop a
+  font-family: 'Lato', sans-serif
+  color: #222222
+  font-size: 14px
+  font-weight: 300
+  line-height: normal
+  margin-left: 13px
+  letter-spacing: 1px
+  width: 100%
+
+
+.top-drop i
+  margin-left: 2px
+  width: 4px
+  height: 4px
+
+
+.top-drop li
+  display: inline-block
+  position: relative
+  margin-top: 9px
+  list-style: none
+
+
+.ferst-li p
+  margin: 0
+  text-align: left
+  font-family: 'Lato', sans-serif
+  color: #222222
+  font-weight: 400
+  font-size: 16px
+  text-transform: none
+  border-bottom: #e6e6e6 1px solid
+
+
+.drop-serch
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  border-style: none solid solid solid
+  border-bottom-left-radius: 3px
+  border-top-left-radius: 3px
+  border: 1px #e6e6e6
+  position: absolute
+  box-sizing: border-box
+  margin-top: 10px
+  visibility: hidden
+  opacity: 0
+  z-index: 5
+  transform: perspective(600px) rotateX(-90deg)
+  transform-origin: 0 0
+  transition: .6s ease-in-out
+
+
+.top-drop li:hover .drop-serch
+  background: #ffffff
+  visibility: visible
+  opacity: 1
+  transform: perspective(600px) rotateX(0deg)
+
+
+.drop-serch li a:hover
+  color: #f16d7f
+
+
+.drop-serch li
+  margin: 7px 7px 7px 0
+  text-align: left
+  width: 100%
+
+.ferst-li li:hover
+  border-left: #f16d7f solid 2px
+
+.ferst-li ul a:nth-child(4)
+  margin-right: 24px
+
+
+.heder-left input
+  box-sizing: border-box
+  padding: 0 18px
+  margin-top: 13px
+  border-bottom-right-radius: 3px
+  border-top-right-radius: 3px
+  border: solid #e6e6e6 1px
+  border-right-width: 0
+  background-color: #ffffff
+  width: 277px
+  height: 38px
+
+
+.heder-left input::placeholder
+  font-family: 'Lato', sans-serif
+  color: #a4a4a4
+  font-size: 14px
+  font-weight: 300
+  line-height: 32px
+  text-align: left
+  padding-left: 16px
+
+.heder-left button
+  margin-top: 13px
+  border-bottom-right-radius: 3px
+  border-top-right-radius: 3px
+  border: solid 1px #e6e6e6
+
+  border-color:
+  box-sizing: border-box
+  background-color: #ffffff
+  width: 40px
+  height: 38px
+
+.heder-left i
+  width: 14px
+  height: 14px
+
+
+.heder-right
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 66px
+
+
+.basket
+  margin-top: 8px
+  margin-right: 10px
+  width: 32px
+  height: 29px
+
+
+.basket:hover
+  transform: scale(2) rotateX(360grad)
+  transition-duration: 2.5s
+
+.my-acc
+  box-sizing: border-box
+  border: #f16d7f solid 1px
+  display: flex
+  justify-content: center
+  background-color: #f16d7f
+  height: 38px
+
+
+.my-acc a
+  text-decoration: none
+  font-family: 'Lato', sans-serif
+  color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  text-align: center
+  width: 100%
+  padding: 8px 20px
+  line-height: normal
+  letter-spacing: .7px
+
+
+.my-acc a:hover
+  background-color: #ffffff
+  color: #f16d7f
+
+
+.container-nav
+  z-index: -1
+  display: flex
+  width: 100%
+  height: 50px
+
+
+.nav
+  margin: 0 auto
+  width: 680px
+
+
+.nav ul
+  list-style: none
+
+
+.navigation
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 50px
+
+
+.navigation li a
+  font-family: 'Lato', sans-serif
+  text-decoration: none
+  color: #222222
+  font-size: 14px
+  font-weight: 700
+  position: relative
+  padding-bottom: 4px
+  line-height: normal
+  transition: color .2s
+  letter-spacing: inherit
+  margin-left: 5px
+
+
+.navigation li
+  height: 100%
+  margin-top: 32px
+
+
+.navigation li:last-child:after
+  content: none
+
+
+.navigation a.current, .navigation a:hover
+  color: #f16d7f
+
+
+.navigation a:not(.mega-menulist-last):before,
+.navigation a:not(.mega-menulist-last):after
+  content: ""
+  position: absolute
+  height: 3px
+  top: 18px
+  right: 50%
+  bottom: 0
+  left: 50%
+  background: #f16d7f
+  transition: .9s
+
+
+.navigation a:hover:before, .navigation .current:before
+  left: 0
+
+
+.navigation a:hover:after, .navigation .current:after
+  right: 0
+
+
+@media (max-width: 550px)
+.navigation
+  padding-top: 0
+
+
+.navigation li
+  display: block
+
+
+.navigation li:after
+  content: none
+
+
+.navigation a
+  padding: 25px 0 20px
+  margin: 0 30px
+
+
+.mega-menulist
+  position: relative
+
+.mega-menulist-end
+  position: relative
+
+
+.mega-dropmenu
+  border: #e8e8e8 solid 1px
+  border-radius: 5px
+  background-color: #ffffff
+  display: none
+  position: absolute
+  z-index: 5
+  top: 30px
+
+.mega-dropmenu::before
+  content: ""
+  display: block
+  width: 12px
+  height: 12px
+  background: #ffffff
+  transform: rotate(45deg)
+  left: 19px
+  top: -7px
+  position: absolute
+  border-left: #e8e8e8 solid 1px
+  border-top: #e8e8e8 solid 1px
+
+.mega-menulist:hover .mega-dropmenu
+  display: flex
+  justify-content: space-between
+
+.mega-menulist-end:hover .mega-dropmenu
+  right: -20px
+  flex-direction: row-reverse
+
+.mega-dropmenu-end:before
+  content: ""
+  display: block
+  width: 12px
+  height: 12px
+  background: #ffffff
+  transform: rotate(45deg)
+  left: 853px
+  top: -7px
+  position: absolute
+  border-left: #e8e8e8 solid 1px
+  border-top: #e8e8e8 solid 1px
+
+.mega-menutext
+  display: flex
+  flex-direction: column
+
+.mega-menutext li
+  position: relative
+  margin: 18px 1px 5px 35px
+
+
+.mega-menutext li:first-child
+  border-bottom: #e8e8e8 solid 1px
+  margin: 17px 46px 14px 25px
+  width: 235px
+  color: #232323
+  font-family: 'Lato', sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 27px
+  text-transform: uppercase
+  letter-spacing: 0.35px
+
+.mega-menutext li:hover:not(:first-child)::before
+  content: ""
+  position: absolute
+  width: 1px
+  height: 1px
+  border: #f16d7f solid 2px
+  border-radius: 30px
+  background: #f16d7f
+  top: 8px
+  left: -13px
+  box-shadow: 0 0 3px 1px #f16d7f
+
+
+.mega-menutext a:first-child
+  margin-bottom: 8px
+
+.mega-menubaner video
+  width: 100%
+  height: 100%
+  margin: -14px 0 -9px -19px
+
+.mega-menubaner video:hover
+  border: #f16d7f 2px solid
+  box-shadow: 1px 6px 17px 0 #daa2aa
+  box-sizing: border-box
+
+.container-baner
+  width: 100%
+  height: 615px
+  background: url("../img/baner/baner-fon.jpg")
+
+.baner
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 1135px
+  height: 100%
+  margin: 0 auto
+  background: url(../img/baner/baner-man.jpg)
+  background-position-y: -51px
+  background-position-x: 4px
+
+.the-brand
+  display: flex
+  flex-direction: column
+  text-transform: uppercase
+  margin-bottom: 121px
+  border-left: #f16d7f solid 12px
+
+.the-brand h1
+  letter-spacing: 1px
+  font-family: 'Lato', sans-serif
+  color: #222222
+  font-size: 59.95px
+  font-weight: 900
+  padding-left: 12px
+  line-height: 1
+
+.the-brand p
+  letter-spacing: 1px
+  font-family: 'Lato', sans-serif
+  color: #222222
+  font-size: 39.96px
+  font-weight: 900
+  padding-left: 12px
+
+.the-brand span
+  font-family: 'Lato', sans-serif
+  color: #f16d7f
+  font-size: 39.96px
+  font-weight: 900
+  transform: scaleY(1.0009)
+
+.container-shopwindow
+  width: 100%
+  height: 2742px
+
+.shopwindow-categories
+  display: flex
+  justify-content: space-between
+  width: 1140px
+  height: 825px
+  margin: 0 auto
+  padding-top: 98px
+
+.shopwindow-categories p
+  font-family: 'Lato', sans-serif
+  color: #222222
+  font-size: 18px
+  font-weight: 900
+  text-transform: uppercase
+  margin-left: 20px
+  letter-spacing: .5px
+  line-height: 26px
+
+.shopwindow-categories span
+  font-family: 'Lato', sans-serif
+  color: #f16d7f
+  font-size: 30px
+  font-weight: 900
+  text-transform: uppercase
+  margin-left: 20px
+  letter-spacing: 0.6px
+
+.shopwindow-categories a
+  text-decoration: none
+
+.shopwindow-categories a:hover
+  transform: scale(1.03)
+  box-shadow: 10px 10px 7px 0 rgba(0, 0, 0, 0.18)
+  transition: .9s
+
+.left-side
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.for-men
+  width: 560px
+  height: 542px
+  background: url("../img/shopwindow/for_men.jpg")
+
+.accesories
+  width: 560px
+  height: 261px
+  background: url("../img/shopwindow/accesories.jpg")
+
+.right-side
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.women30
+  width: 560px
+  height: 261px
+  background: url("../img/shopwindow/women30.jpg")
+
+.for-kids
+  width: 560px
+  height: 542px
+  background: url("../img/shopwindow/for_kids.jpg")
+
+.categories-text1
+  margin-top: 26px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-color: #ffffff
+  width: 175px
+  height: 82px
+
+.categories-text2
+  margin-top: 26px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-color: #ffffff
+  width: 225px
+  height: 82px
+
+.categories-text3
+  margin-top: 26px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-color: #ffffff
+  width: 162px
+  height: 82px
+
+.categories-text4
+  margin-top: 26px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-color: #ffffff
+  width: 180px
+  height: 82px
+
+.fetured-item
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  width: 100%
+  height: 1195px
+
+.fetured-itemtext
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: center
+  margin: 0 auto
+  width: 1140px
+  height: 211px
+
+.fetured-itemtext h2
+  font-family: 'Lato', sans-serif
+  color: #222222
+  font-size: 30px
+  font-weight: 700
+  margin-left: 7px
+  line-height: 50px
+  letter-spacing: .8px
+
+.fetured-itemtext p
+  font-family: 'Lato', sans-serif
+  color: #9f9f9f
+  font-size: 14px
+  font-weight: 400
+  letter-spacing: 0.4px
+
+.product-modelcard-block
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 1140px
+  margin: 0 auto
+
+.product-modelcard-wrap
+  background-color: #ffffff
+  display: block
+  position: relative
+  margin-bottom: 39px
+
+.product-modelcard-img
+  width: 100%
+
+.product-modelcard-wrap:hover .product-modelcard-img
+  filter: brightness(70%)
+
+.product-modelcard-wrap:hover
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+.product-modelcard-blocktext
+  padding: 20px 15px
+
+.product-modelcard-name
+  color: #222222
+  font-family: 'Lato', sans-serif
+  font-size: 13px
+  font-weight: 400
+  text-transform: uppercase
+
+.product-modelcard-prise
+  color: #f16d7f
+  font-family: 'Lato', sans-serif
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+
+.button-addcard-wrap
+  position: absolute
+  top: 98px
+  display: none
+  justify-content: center
+  width: 100%
+
+.product-modelcard-wrap:hover .button-addcard-wrap
+  display: flex
+
+.button-add-card
+  border: 1px solid #ffffff
+  color: #ffffff
+  font-family: 'Lato', sans-serif
+  font-size: 13px
+  font-weight: 700
+  padding: 4px 12px 0 13px
+  display: flex
+  align-items: center
+
+.button-add-card:hover
+  background: #ffffff8a
+  color: #f16d7fa8
+
+.button-product
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 0 auto
+  width: 1140px
+  height: 219px
+
+.button-productwrap
+  box-sizing: border-box
+  border: #f16d7f solid 1px
+  display: flex
+  justify-content: center
+  background-color: #f16d7f
+
+.button-productwrap a
+  text-decoration: none
+  font-family: 'Lato', sans-serif
+  color: #ffffff
+  font-size: 16px
+  font-weight: 700
+  line-height: 48px
+  width: 100%
+  text-align: center
+  letter-spacing: 0.5px
+  padding: 0 24px
+
+.button-productwrap a:hover
+  background-color: #ffffff
+  color: #f16d7f
+
+.baner-seilwrap
+  width: 100%
+  height: 550px
+
+.baner-seil
+  display: flex
+  margin: 0 auto
+  background-color: #222224
+  width: 1140px
+  height: 529px
+
+.seil-left
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 767px
+  height: 529px
+  background: url("../img/baner-seil/baner-seil.jpg")
+
+.seil-text
+  padding-left: 40px
+  margin-bottom: 198px
+  width: 293px
+  height: 78px
+  letter-spacing: 0.8px
+
+.seil-text h1
+  font-family: 'Lato', sans-serif
+  color: #ffffff
+  font-size: 53.62px
+  font-weight: 700
+
+
+.seil-text span
+  font-family: 'Lato', sans-serif
+  color: #f16d7f
+  font-size: 53.62px
+  font-weight: 700
+  text-transform: uppercase
+
+.seil-text p
+  font-family: 'Lato', sans-serif
+  color: #ffffff
+  font-size: 32.17px
+  font-weight: 700
+  text-transform: uppercase
+
+.seil-center
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  box-sizing: border-box
+  padding-left: 33px
+  padding-bottom: 80px
+  width: 105px
+  height: 100%
+
+.auto
+  margin-bottom: 33px
+  margin-left: 3px
+
+.discount
+  margin-bottom: 22px
+  margin-left: 3px
+
+.crown
+  padding-bottom: 93px
+
+.seil-right
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  box-sizing: border-box
+  padding-bottom: 20px
+  padding-left: 10px
+  width: 259px
+  height: 100%
+
+.seil-right h3
+  font-family: 'Lato', sans-serif
+  color: #fbfbfb
+  font-size: 20px
+  font-weight: 700
+  line-height: 44px
+
+.seil-right p
+  font-family: 'Lato', sans-serif
+  color: #fbfbfb
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+
+.container-reviews
+  width: 100%
+  height: 438px
+
+.reviews
+  display: flex
+  justify-content: center
+  box-sizing: border-box
+  height: 438px
+  margin: 0 auto
+  background: url("../img/reviews/backgraund1.jpg") no-repeat
+  background-size: 1925px
+
+
+.reviews-left
+  width: 921px
+  display: flex
+  justify-content: center
+
+.reviews-avatar
+  padding-top: 112px
+  padding-left: 273px
+
+.reviews-text
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  padding-left: 28px
+  padding-top: 120px
+  width: 386px
+  height: 100%
+
+.reviews-text p
+  font-family: 'Lato', sans-serif
+  color: rgba(34, 34, 36, 0.67)
+  font-size: 16px
+  font-style: italic
+  line-height: 24px
+  text-align: left
+
+.reviews-name
+  padding-top: 7px
+
+.reviews-name p
+  font-family: 'Lato', sans-serif
+  color: #f16d7f
+  font-size: 16px
+  font-weight: 700
+  text-align: left
+
+.reviews-name span
+  font-family: 'Lato', sans-serif
+  color: #222224
+  font-size: 12px
+  font-weight: 300
+  text-align: left
+
+.reviews-pegewrap
+  display: flex
+  justify-content: flex-start
+  width: 300px
+  height: 25px
+  padding-top: 39px
+
+.reviews-peges
+  background-color: #d6d6d6
+  width: 38px
+  height: 4px
+  margin-right: 13px
+
+.reviews-peges:hover
+  background-color: #f16d7f
+
+.reviews-right
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  width: 915px
+
+.reviews-subscribewrap
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  margin-left: 90px
+  height: 108px
+
+.reviews-subscribe
+  margin-bottom: 28px
+
+.reviews-subscribe h3
+  font-family: 'Lato', sans-serif
+  color: rgba(34, 34, 36, 0.67)
+  font-size: 24px
+  font-weight: 400
+  text-transform: uppercase
+
+.reviews-subscribe p
+  font-family: 'Lato', sans-serif
+  color: rgba(34, 34, 36, 0.67)
+  font-size: 14px
+  font-weight: 400
+  line-height: 24px
+  text-transform: uppercase
+
+.reviews-form
+  display: flex
+  justify-content: center
+  margin-bottom: 76px
+
+.reviews-form input
+  box-sizing: border-box
+  padding-left: 28px
+  border: #e1e1e1 solid 1px
+  border-right: none
+  border-top-left-radius: 27px
+  border-bottom-left-radius: 27px
+  background-color: #e1e1e1
+  width: 285px
+  height: 46px
+
+.reviews-form input::placeholder
+  font-family: 'Lato', sans-serif
+  color: rgba(34, 34, 36, 0.67)
+  font-size: 14px
+  font-weight: 600
+  line-height: 54px
+  text-align: left
+
+.reviews-form button
+  border: #f16d7f solid 1px
+  border-top-right-radius: 27px
+  border-bottom-right-radius: 27px
+  background-color: #f16d7f
+  width: 104px
+  height: 46px
+  font-family: 'Lato', sans-serif
+  color: #ffffff
+  font-size: 14px
+  font-weight: 400
+  text-align: center
+
+.reviews-form button:active
+  color: #f16d7f
+  background-color: #ffffff
+
+.container-footerwrap
+  width: 100%
+  height: 458px
+
+.container-foote
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: 0 auto
+  width: 1140px
+  height: 100%
+
+.container-foote h3
+  font-family: 'Lato', sans-serif
+  color: #f16d7f
+  font-size: 18px
+  font-weight: 700
+  line-height: 85px
+  text-transform: uppercase
+
+.container-foote ul
+  padding-bottom: 25px
+
+.container-foote li, a
+  list-style: none
+  font-family: 'Lato', sans-serif
+  color: #898989
+  font-size: 16px
+  font-weight: 400
+  line-height: 40px
+  text-decoration: none
+
+.container-foote a:hover
+  color: #f16d7f
+
+.footer-logotext
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 427px
+  margin-top: 18px
+
+.footer-logo
+  display: flex
+  width: 100%
+  height: 51px
+
+.footer-logotext p
+  margin-left: 12px
+  margin-top: 10px
+  font-family: 'Lato', sans-serif
+  text-transform: uppercase
+  color: #222222
+  font-size: 27px
+  font-weight: 300
+  text-align: center
+
+.footer-logotext span
+  margin-right: 37px
+  margin-top: 13px
+  font-family: 'Lato', sans-serif
+  color: #f16d7f
+  font-size: 27px
+  font-weight: 900
+  text-align: center
+
+.footer-objec p
+  font-family: 'Lato', sans-serif
+  color: #898989
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  text-align: left
+  text-transform: none
+  padding-top: 13px
+  margin-left: 0
+
+.footer-objec2
+  padding-top: 20px
+
+.futer-naverap
+  margin-top: 23px
+  display: flex
+  justify-content: space-around
+  width: 700px
+
+.footer-company
+  margin-left: 6px
+
+.footer-information
+  margin-left: 39px
+
+.footer-copywrap
+  background-color: #e6e6e6
+  width: 100%
+  height: 79px
+
+.footer-copy
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: 0 auto
+  width: 1140px
+  height: 100%
+
+.copy p
+  font-family: 'Lato', sans-serif
+  color: #7a7a7a
+  font-size: 16px
+  font-weight: 400
+
+.footer-soc
+  display: flex
+  justify-content: space-between
+  width: 191px
+
+.footer-soc i
+  color: #ffffff
+  font-size: 32px
+
+.footer-soc a:hover i
+  color: #f16d7f
+
+.footer-soc a:active i
+  color: #b2b2b2
+
+/*Product.html style*
+.container-newarrivals
+  background-color:  #f8f3f4
+  width: 100%
+  height: 148px
+
+.new-warrivals-wrap
+  display: flex
+  justify-content: space-between
+  margin: 0 auto
+  width: 1140px
+  height: 100%
+
+.new-warrivals-text
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 180px
+
+.new-warrivals-text h2
+  font-family: 'Lato', sans-serif
+  color:  #f16d7f
+  font-size: 24px
+  font-weight: 900
+  line-height: 20px
+  text-align: center
+  text-transform: uppercase
+
+.new-warrivals-bread-crumbs
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 200px
+  height: 100%
+
+.new-warrivals-bread-crumbs a
+  font-family: 'Lato', sans-serif
+  color:  #636363
+  font-size: 14px
+  font-weight: 600
+  line-height: 20px
+  text-align: center
+  text-transform: uppercase
+
+.new-warrivals-bread-crumbs a:hover
+  color: #f16d7f
+
+.container-banerseil-row
+  background-color:  #222224
+  width: 100%
+  height: 341px
+
+.container-banerseil-rowwrap
+  display: flex
+  justify-content: space-between
+  background-color:  #222224
+  margin: 0 auto
+  width: 1140px
+  height: 341px
+
+.container-contentproduct
+  width: 100%
+
+.container-content-productwrap
+  display: flex
+  justify-content: space-between
+  margin: 0 auto
+  width: 1140px
+  height: 100%
+
+.content-productwrap
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  width: 850px
+
+.product-navwrap
+  margin-top: 59px
+
+.product-nav-topmenu
+  margin-top: 10px
+  box-sizing: border-box
+  width: 239px
+  height: 37px
+  box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.16)
+  padding: 10px 0
+  background: url("../img/product/ectangle.png") no-repeat
+
+.product-nav-topmenu summary
+  font-family: 'Lato', sans-serif
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 900
+  line-height: 20px
+  text-align: left
+  text-transform: uppercase
+  position: relative
+  display: flex
+  margin-left: 12px
+
+summary::-webkit-details-marker
+  display: none
+
+.product-nav-topmenu summary::after
+  content: ''
+  width: 19px
+  height: 20px
+  position: absolute
+  margin-left: 205px
+  bottom: -3px
+  background: url(../img/icon/drop-down-arrow2774.svg) no-repeat
+  background-size: 14px
+
+.product-nav-dropmenu
+  height: max-content
+
+.product-navpunkt p
+  color: #6f6e6e
+  font-family: 'Lato', sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 33px
+  margin-left: 35px
+
+details[open]
+  display: flex
+  flex-direction: column
+  height: max-content
+  flex-grow: 1
+
+details[open] summary
+  color: #f16d7f
+
+details[open] summary:after
+  content: ''
+  width: 19px
+  height: 20px
+  position: absolute
+  margin-left: 205px
+  bottom: -3px
+  background: url(../img/icon/drop-up-pinc.svg) no-repeat
+  background-size: 14px
+
+.product-navpunkt:hover
+  border-left: #f16d7f solid 2px
+
+.product-navpunkt p:hover
+  color: #f16d7f
+
+.model-setup
+  display: flex
+  justify-content: space-between
+  height: 80px
+  margin: 59px 0 41px 0
+
+.model-setup h4
+  font-family: 'Lato', sans-serif
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 900
+  line-height: 20px
+  text-align: left
+  text-transform: uppercase
+
+.trending-nowwrap
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 180px
+
+.trending-nowwrap a
+  font-family: 'Lato', sans-serif
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  text-align: left
+
+.trending-now
+  display: flex
+  justify-content: space-between
+
+.trending-now1
+  display: flex
+  justify-content: space-between
+
+.size
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 235px
+
+.size h4
+  padding-bottom: 10px
+
+.size label
+  font-family: 'Open Sans', sans-serif
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
+  text-align: left
+  padding: 0 14px 0 6px
+
+.price
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 265px
+
+.price-range input
+  width: 262px
+  height: 6px
+
+.price-value
+  display: flex
+  justify-content: space-between
+  width: 262px
+  font-family: 'Open Sans', sans-serif
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  text-align: left
+
+.price h4
+  padding-bottom: 11px
+
+
+.model-sorting
+  display: flex
+  justify-content: left
+  align-items: center
+  padding-left: 10px
+  background-color: #f3f3f3
+  width: 846px
+  height: 50px
+
+.sort-bybutton-drop
+  border: solid #ebebeb 1px
+  box-sizing: border-box
+  background-color:  #ffffff
+  position: relative
+  width: 153px
+  height: 30px
+
+.sort-bybutton-drop p
+  margin-left: 13px
+  font-family: 'Lato', sans-serif
+  color:  #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+
+.sort-bybutton-drop span
+  position: relative
+  margin-left: 19px
+
+.icon-name::before
+  content: ''
+  width: 1px
+  height: 28px
+  position: absolute
+  bottom: -5px
+  margin-left: -10px
+  background: url(../img/icon/shape8.svg)
+
+.icon-name::after
+  content: ''
+  width: 19px
+  height: 20px
+  position: absolute
+  margin-left: 12px
+  bottom: -5px
+  background: url(../img/icon/drop-down-arrow2774.svg) no-repeat
+  background-size: 14px
+
+.drop-filtrlist
+  display: none
+  z-index: 5
+  position: absolute
+  background: #ffffff
+  width: max-content
+  margin-top: 4px
+
+.drop-filtrlist span
+  font-family: 'Lato', sans-serif
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 15px
+  text-transform: uppercase
+  margin-top: 7px
+
+.season-filter p, .color-filter p,.brend-filter  p
+  font-family: 'Lato', sans-serif
+  color: #6f6e6e
+  font-size: 13px
+  font-weight: 400
+  line-height: 20px
+  text-transform: none
+
+.color-filter-choice input
+  width: 119px
+  margin-top: 5px
+  margin-bottom: 10px
+
+.color-filter-choice input:hover
+  border: #f16d7f solid 2px
+
+.sort-bybutton-drop:hover .drop-filtrlist
+  display: flex
+  flex-direction: column
+
+.brend-filter:hover, .season-filter:hover,.color-filter:hover
+  color: #f16d7f
+  border-left: #f16d7f solid 4px
+  margin-left: -14px
+
+.show-button-drop
+  border: solid #ebebeb 1px
+  box-sizing: border-box
+  background-color:  #ffffff
+  width: 119px
+  height: 30px
+
+.show-button-drop p
+  color: #6f6e6e
+  font-family: 'Lato', sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  margin-left: 13px
+
+.show-button-drop span
+  position: relative
+  margin-left: 13px
+
+.icon-name::before
+  content: ''
+  width: 1px
+  height: 28px
+  position: absolute
+  bottom: -5px
+  margin-left: -10px
+  background: url(../img/icon/shape8.svg)
+
+.icon-name::after
+  content: ''
+  width: 19px
+  height: 20px
+  position: absolute
+  margin-left: 12px
+  bottom: -5px
+  background: url(../img/icon/drop-down-arrow2774.svg) no-repeat
+  background-size: 14px
+
+.show-button-drop:hover .drop-filtrlist
+  display: flex
+  flex-direction: column
+
+.model-casebloc-wrap
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 48px
+
+.model-casewrap
+  position: relative
+  padding-bottom: 15px
+  margin-top: 35px
+
+.model-casewrap:hover
+  filter: brightness(60%)
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+
+.model-casetext
+  display: flex
+  flex-direction: column
+  padding: 0 18px
+
+.model-casetext p
+  color: #6f6e6e
+  font-family: 'Lato', sans-serif
+  font-size: 13px
+  font-weight: 600
+  text-transform: uppercase
+
+.model-casetext span
+  color: #f16d7f
+  font-family: 'Lato', sans-serif
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+
+.model-imgbutton-wrap
+  position: absolute
+  display: flex
+  flex-direction: column
+
+.model-pagenav
+  padding-top: 3px
+  margin-bottom: 110px
+
+.pagenatorwrap
+  display: flex
+  justify-content: space-between
+  height: 100%
+  align-items: center
+
+.pagenator
+  width: 285px
+  height: 44px
+  border-radius: 3px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  display: flex
+  justify-content: space-around
+
+.pagenator-page
+  display: flex
+  justify-content: center
+
+.pagenator-page a
+  padding: 3px 10px
+
+.pagenator:hover
+  border: 1px solid #f16d7f
+
+.pagenator a:hover
+  color: #f16d7f
+
+.button-viweall
+  display: flex
+  align-items: center
+  width: max-content
+  height: 44px
+  border-radius: 3px
+  border: 1px solid #ef5b70
+  background: #f16d7f
+
+.button-viweall a
+  color: #ffffff
+  font-family: 'Lato', sans-serif
+  font-size: 16px
+  font-weight: bold
+  line-height: 26px
+  padding: 16px 44px
+
+.button-viweall:hover
+  background: #ffffff
+
+.button-viweall a:hover
+  color: #f16d7f
+
+.banerseil-column
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 310px
+  height: 100%
+
+.banerseil-column img
+  padding-bottom: 32px
+
+.banerseil-column h3
+  padding-bottom: 17px
+  font-family: 'Lato', sans-serif
+  color:  #fbfbfb
+  font-size: 19.96px
+  font-weight: 700
+  text-align: center
+
+.banerseil-column p
+  font-family: 'Lato', sans-serif
+  color:  #fbfbfb
+  font-size: 13.97px
+  font-weight: 300
+  line-height: 24px
+  text-align: center
+
+/* Single page.html style */
+.slider-bloc input
+  display: none
+
+.slider-wrap
+  height: 777px
+  border: 1px solid #eaeaea
+  background-color: #f7f7f7
+
+#slider
+  margin: 0 auto
+  width: 100%
+  height: 825px
+  background: #ffffff
+  text-align: center
+
+#slides
+  position: relative
+
+#container
+  width: 100%
+  height: 780px
+  overflow: hidden
+  position: relative
+
+#slides .inner
+  width: 500%
+  line-height: 0
+
+#slides .slider-img
+  width: 20%
+  float: left
+
+.slider-img img
+  height: 790px
+  width: 100%
+
+#commands
+  margin: -25% 0 0 0
+  width: 100%
+  height: 50px
+  position: relative
+
+#commands label
+  width: 80px
+  height: 80px
+  opacity: 0.5
+
+#slide1:checked ~ #slides .inner
+  margin-left:0
+
+#slide2:checked ~ #slides .inner
+  margin-left:-100%
+
+#slide3:checked ~ #slides .inner
+  margin-left:-200%
+
+#slide4:checked ~ #slides .inner
+  margin-left:-300%
+
+#slide5:checked ~ #slides .inner
+
+  +margin-left:-400%
+
+#slide1:checked ~ #commands label:nth-child(2),
+#slide2:checked ~ #commands label:nth-child(3),
+#slide3:checked ~ #commands label:nth-child(4),
+#slide4:checked ~ #commands label:nth-child(5),
+#slide5:checked ~ #commands label:nth-child(1)
+  background: url(../img/icon/right-arrow-black-square-button_icon-icons.com_72949.png) no-repeat
+  display: block
+  position: absolute
+  right: -31px
+
+#slide1:checked ~ #commands label:nth-child(5),
+#slide2:checked ~ #commands label:nth-child(1),
+#slide3:checked ~ #commands label:nth-child(2),
+#slide4:checked ~ #commands label:nth-child(3),
+#slide5:checked ~ #commands label:nth-child(4)
+  background: url(../img/icon/left-arrow-black-button-square_icon-icons.com_73002.png) no-repeat
+  display: block
+  position: absolute
+  left: 0
+
+
+.you-maylike-alsowrap
+  width: 100%
+  height: 1367px
+  position: relative
+
+.you-maylike-also
+  display: flex
+  justify-content: center
+
+.single-product-diteilswrap
+  width: 1140px
+  position: absolute
+  bottom: 46px
+  border-top: 1px solid #eaeaea
+  background-color: #ffffff
+
+.single-product-diteiltext
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  border-left: 1px solid #eaeaea
+  border-right: 1px solid #eaeaea
+
+.single-product-diteiltext h1
+  color: #f16d7f
+  font-family: 'Lato', sans-serif
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+  padding-top: 73px
+  border-bottom: 1px solid #eaeaea
+  position: relative
+
+.single-product-diteiltext::before
+  content: ""
+  width: 63px
+  height: 3px
+  background-color: #ef5b70
+  position: absolute
+  z-index: 1
+  top: 96px
+
+.single-product-diteiltext h2
+  color: #4d4d4d
+  font-family: 'Lato', sans-serif
+  font-size: 18px
+  font-weight: 400
+  line-height: 24px
+  text-transform: uppercase
+  margin: 18px 0 67px 0
+
+.single-product-diteiltext span
+  margin: 0
+  width: 641px
+  color: #5e5e5e
+  font-family: 'Lato', sans-serif
+  font-weight: 300
+  line-height: 24px
+
+.single-product-diteilpice-wrap
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  border-left: 1px solid #eaeaea
+  border-right: 1px solid #eaeaea
+
+.single-product-diteilsetup
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  border-left: 1px solid #eaeaea
+  border-right: 1px solid #eaeaea
+  border-bottom: 1px solid #eaeaea
+
+.single-product-diteilmaterial
+  display: flex
+  margin: 28px 0 37px 0
+
+.single-product-diteilmaterial span:first-child
+  margin-right: 44px
+
+.single-product-diteilmaterial span
+  display: flex
+  color: #b9b9b9
+  font-family: 'Lato', sans-serif
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+
+.single-product-diteilmaterial p
+  font-family: 'Lato', sans-serif
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+  color: #2f2f2f
+
+.single-product-diteilpice p
+  width: 54px
+  height: 24px
+  color: #ef5b70
+  font-family: 'Lato', sans-serif
+  font-size: 24px
+  font-weight: 700
+  line-height: 24px
+  margin-bottom: 107px
+  margin-right: 28px
+
+.singl-product-diteilsparametr-wrap
+  display: flex
+  justify-content: center
+  width: 100%
+
+.single-product-diteilsetup-color,
+.single-product-diteilsetup-size,
+.single-product-diteilsetup-quantity
+  color: #2f2f2f
+  font-family: 'Lato', sans-serif
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+  position: relative
+
+.single-product-diteilsetup-color::after
+  content: ""
+  width: 10px
+  height: 10px
+  background: url("../img/icon/drop-down-arrow_icon-icons.com_72774.png") no-repeat
+  background-size: 10px
+  position: absolute
+  left: 122px
+  top: 54px
+
+.single-product-diteilsetup-size::after
+  content: ""
+  width: 10px
+  height: 10px
+  background: url("../img/icon/drop-down-arrow_icon-icons.com_72774.png") no-repeat
+  background-size: 10px
+  position: absolute
+  left: 122px
+  top: 54px
+
+.sigel-produkt-dropcolorsize
+  color: #bcbcbc
+  font-family: 'Lato', sans-serif
+  font-size: 13px
+  font-weight: 400
+  line-height: 24px
+
+.drop-listcolorsize-wrap
+  display: none
+  z-index: 5
+  position: absolute
+  background: #ffffff
+  margin-top: 4px
+  width: 100%
+  top: 38px
+  border: 1px solid #eaeaea
+
+.drop-listcolorsize-wrap:before
+  content: ""
+  display: block
+  width: 7px
+  height: 7px
+  background: #ffffff
+  transform: rotate(45deg)
+  left: 19px
+  top: -5px
+  position: absolute
+  border-left: #e8e8e8 solid 1px
+  border-top: #e8e8e8 solid 1px
+
+.sigel-produkt-dropcolorsize span
+  margin-left: 37px
+
+.drop-listcolor:hover
+  border-left: #f16d7f solid 2px
+
+.drop-listcolor input
+  display: none
+
+.drop-listcolor input:checked + span
+  border-bottom: #f16d7f solid 1px
+  color: #f16d7f
+
+.sigel-produkt-dropcolorsize
+  position: relative
+  width: 144px
+  height: 35px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin-top: 16px
+
+
+.sigel-produkt-dropcolorsize:hover .drop-listcolorsize-wrap
+  display: flex
+  flex-direction: column
+
+.drop-listcolor:hover
+  color: #f16d7f
+
+.size-list:hover
+  border-left: #f16d7f 2px solid
+  color: #f16d7f
+
+#first-red::before
+  position: absolute
+  content: ""
+  width: 10px
+  height: 10px
+  background: url("../img/icon/icons8-red40.png")
+  background-size:  10px
+  left: 19px
+  top: 13px
+
+#red::before
+  position: absolute
+  content: ""
+  width: 10px
+  height: 10px
+  background: url("../img/icon/icons8-red40.png")
+  background-size:  10px
+  left: 18px
+  top: 7px
+
+#black::before
+  position: absolute
+  content: ""
+  width: 10px
+  height: 10px
+  background: url(../img/icon/icons8-black40.png)
+  background-size: 10px
+  left: 18px
+  top: 31px
+
+#white::before
+  position: absolute
+  content: ""
+  width: 10px
+  height: 10px
+  background: url(../img/icon/icons8-white40.png)
+  background-size: 10px
+  left: 18px
+  top: 55px
+
+#blue::before
+  position: absolute
+  content: ""
+  width: 10px
+  height: 10px
+  background: url(../img/icon/icons8-blu40.png)
+  background-size: 10px
+  left: 18px
+  top: 80px
+
+#green::before
+  position: absolute
+  content: ""
+  width: 10px
+  height: 10px
+  background: url(../img/icon/icons8-grin40.png)
+  background-size: 10px
+  left: 18px
+  top: 104px
+
+#gray::before
+  position: absolute
+  content: ""
+  width: 10px
+  height: 10px
+  background: url(../img/icon/icons8-grey40.png)
+  background-size: 10px
+  left: 18px
+  top: 128px
+
+.single-product-diteilsetup-size
+  margin: 0 53px
+
+.size-list
+  margin-left: 37px
+
+.size-list input
+  display: none
+
+.single-product-diteilsetup-quantity
+  display: flex
+  flex-direction: column
+
+.single-product-diteilsetup-quantity input
+  width: 144px
+  height: 35px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  margin-top: 16px
+  box-sizing: border-box
+  padding-left: 37px
+  color: #bcbcbc
+  font-family: 'Lato', sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 24px
+
+.single-product-diteilsetup-buttaddtocard
+  border: 1px solid #ef5b70
+  background-color: #ffffff
+  margin: 28px 0 122px 0
+
+.single-product-diteilsetup-buttaddtocard a
+  display: flex
+  justify-content: center
+  color: #ef5b70
+  font-family: 'Lato', sans-serif
+  font-size: 16px
+  font-weight: 700
+  padding: 11px 210px
+  position: relative
+
+.single-product-diteilsetup-buttaddtocarda:before
+  content: ""
+  position: absolute
+  height: 24px
+  width: 26px
+  background: url(../img/singl-product-woven/forma_1_copy.png) no-repeat
+  background-size: 23px
+  top: 20px
+  left: 182px
+
+
+.single-product-diteilsetup-buttaddtocard:hover .single-product-diteilsetup-buttaddtocarda:before
+  content: ""
+  position: absolute
+  height: 24px
+  width: 26px
+  background: url(../img/product/basket1.svg) no-repeat
+  background-size: 23px
+  top: 20px
+  left: 182px
+
+.single-product-diteilsetup-buttaddtocard a:hover
+  background: #f16d7f
+  color: #ffffff
+
+.single-product-youmaylikealso
+  color: #4d4d4d
+  font-family: 'Lato', sans-serif
+  font-size: 24px
+  font-weight: 400
+  line-height: 20px
+  text-transform: uppercase
+  margin: 119px 0 75px 0
+  display: flex
+  justify-content: center
+
+.sigel-produkt-modelcard-bloc
+  display: flex
+  justify-content: space-between
