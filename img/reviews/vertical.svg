@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="1px" height="438px" viewBox="0 0 1 438">
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+<feFlood flood-color="rgb(226,226,226)" result="snFloodOut"/>
+<feComposite in="snFloodOut" in2="SourceAlpha" operator="in" result="snSilhouette"/>
+<feOffset in="snSilhouette" dx="-0.00" dy="50.00" result="snShifted1"/>
+<feOffset in="snSilhouette" dx="0.00" dy="-50.00" result="snShifted2"/>
+<feComposite in="snShifted1" in2="snShifted2" operator="xor" result="snMerged1"/>
+<feComposite in="snMerged1" in2="snSilhouette" operator="xor" result="snMerged2"/>
+<feComposite in="snMerged2" in2="SourceAlpha" operator="in" result="snEffect"/>
+<feGaussianBlur in="snEffect" stdDeviation="40.00" result="snBlurOut"/>
+<feComposite in="snBlurOut" in2="SourceAlpha" operator="in" result="snEffect3"/>
+<feBlend in="SourceGraphic" in2="snEffect3" mode="multiply" result="satin"/>
+</filter>
+<rect x="0" y="0" width="1" height="438" fill="rgb(255,255,255)" filter="url(#filter0)"/></svg>
