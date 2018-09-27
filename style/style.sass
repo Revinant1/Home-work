@@ -1,3 +1,5 @@
+$block_width: 600
+
 *
   margin: 0
   padding: 0
@@ -484,22 +486,22 @@ input, button, summary
   height: 0
   width: 12px
   left: -12px
-  bottom: 4%
+  bottom: 52%
   position: absolute
   background: #222222
   transition: 0.9s
 
 .the-brand:hover:after
-  height: 90.3%
+  height: 15.3%
 
 
 .the-brand:before
   content: ""
   display: block
-  height: 88.3%
+  height: 15.3%
   width: 12px
   left: -12px
-  top: 8%
+  top: 33%
   position: absolute
   background: #f16d7f
   transition: 0.9s
@@ -757,12 +759,48 @@ input, button, summary
   height: 529px
 
 .seil-left
+  position: relative
   display: flex
   flex-direction: column
   justify-content: center
   width: 767px
   height: 529px
   background: url("../img/baner-seil/baner-seil.jpg")
+
+.seil-text:after
+  content: ""
+  display: block
+  height: 0
+  width: 12px
+  left: 19px
+  bottom: 62.4%
+  position: absolute
+  background: #ffffff
+  transition: 0.9s
+
+.seil-left:hover .seil-text:after
+  height: 13.3%
+.seil-left:hover #seil-30\%
+  color: #f16d7f
+.seil-left:hover #seil-offer
+  color: #ffffff
+.seil-left:hover #seil-for-wumen
+  color: #f16d7f
+
+.seil-text:before
+  content: ""
+  display: block
+  height: 13.3%
+  width: 12px
+  left: 19px
+  top: 24.4%
+  position: absolute
+  background: #f16d7f
+  transition: 0.9s
+
+.seil-left:hover .seil-text:before
+  height: 0
+
 
 .seil-text
   padding-left: 40px
@@ -1963,5 +2001,85 @@ details[open] summary:after
   justify-content: space-between
   scroll-snap-align: none
 
-  /*
+  /*style shopping-cart.html*/
+
+.shopping-cart-blok
+  width: 100%
+  .shopping-cart-wrap
+    width: 1140px
+    margin: 0 auto
+    .shopping-cart-header
+      width: 100%
+      color: #222222
+      font-family: 'Lato', sans-serif
+      font-size: 13px
+      font-weight: 700
+      line-height: 20px
+      text-transform: uppercase
+      display: flex
+      justify-content: space-between
+    .shopping-cart-header p
+        margin-top: 90px
+    .shopping-cart-header p:last-child
+        margin-right: 0
+  .shopping-cart-position
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid #eaeaea
+    .shopping-cart-position-img
+      display: flex
+      margin: 22px 217px 25px 0
+    .shopping-card-position-img-text
+      display: flex
+      flex-direction: column
+      h3
+        color: #222222
+        font-family: 'Lato', sans-serif
+        font-size: 13px
+        font-weight: 400
+        text-transform: uppercase
+      span
+        display: flex
+        color: #6f6e6e
+        font-family: 'Lato', sans-serif
+        font-size: 13px
+        font-weight: 400
+        line-height: 20px
+      p
+        color: #6f6e6e
+        font-family: 'Lato', sans-serif
+        font-size: 13px
+        font-weight: 300
+        line-height: 20px
+    span
+      color: #656565
+      font-family: 'Lato', sans-serif
+      font-size: 13px
+      font-weight: 400
+    input
+      width: 54px
+      height: 30px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+.shopping-cart-position-tablica
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 600px
+  .shopping-position-uniteprice
+    margin-left: 20px
+  .shopping-position-quantity
+    margin-left: 9px
+  .shopping-position-shipping
+    margin-right: 10px
+  .shopping-position-subtotal
+    margin-right: 5px
+  .shopping-position-action
+    display: block
+    width: 21px
+    height: 21px
+    background: black
+    margin-right: 16px
+
+
 
