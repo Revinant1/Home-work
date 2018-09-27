@@ -502,23 +502,23 @@ input, button, summary {
     display: block;
     height: 0;
     width: 12px;
-    left: 689px;
-    bottom: 43%;
+    left: -12px;
+    bottom: 4%;
     position: absolute;
     background: #222222;
     transition: 0.9s;
 }
 .the-brand:hover:after {
-    height: 12.3%;
+    height: 90.3%;
 }
 
 .the-brand:before {
     content: "";
     display: block;
-    height: 12.3%;
+    height: 88.3%;
     width: 12px;
-    left: 689px;
-    top: 45%;
+    left: -12px;
+    top: 8%;
     position: absolute;
     background: #f16d7f;
     transition: 0.9s;
