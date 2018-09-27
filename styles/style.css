@@ -463,6 +463,7 @@ input, button, summary {
     background-position-x: 4px; }
 
 .the-brand {
+    position: relative;
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
@@ -502,25 +503,26 @@ input, button, summary {
     height: 0;
     width: 12px;
     left: 689px;
-    bottom: 29%;
+    bottom: 43%;
     position: absolute;
     background: #222222;
-    transition: 0.9s; }
-
+    transition: 0.9s;
+}
 .the-brand:hover:after {
-    height: 18.6%; }
+    height: 12.3%;
+}
 
 .the-brand:before {
     content: "";
     display: block;
-    height: 18.6%;
+    height: 12.3%;
     width: 12px;
     left: 689px;
-    top: 48%;
+    top: 45%;
     position: absolute;
     background: #f16d7f;
-    transition: 0.9s; }
-
+    transition: 0.9s;
+}
 .the-brand:hover:before {
     height: 0; }
 
