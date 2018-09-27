@@ -445,11 +445,11 @@ input, button, summary {
     box-sizing: border-box;
 }
 
+
 .container-baner {
     width: 100%;
     height: 615px;
-    background: url("../img/baner/baner-fon.jpg");
-}
+    background: url("../img/baner/baner-fon.jpg"); }
 
 .baner {
     display: flex;
@@ -460,43 +460,78 @@ input, button, summary {
     margin: 0 auto;
     background: url(../img/baner/baner-man.jpg);
     background-position-y: -51px;
-    background-position-x: 4px;
-}
+    background-position-x: 4px; }
 
 .the-brand {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
     margin-bottom: 121px;
-    border-left: #f16d7f solid 12px;
-}
+    padding-bottom: 4px;
+    transition: color 0.2s;
+    text-decoration: none; }
 
 .the-brand h1 {
+    margin: 0;
     letter-spacing: 1px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color: #222222;
     font-size: 59.95px;
     font-weight: 900;
     padding-left: 12px;
-    line-height: 1;
-}
+    line-height: 1; }
 
 .the-brand p {
+    margin: 0;
     letter-spacing: 1px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color: #222222;
     font-size: 39.96px;
     font-weight: 900;
-    padding-left: 12px;
-}
+    padding-left: 12px; }
 
 .the-brand span {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color: #f16d7f;
     font-size: 39.96px;
-    font-weight: 900;
-    transform: scaleY(1.0009);
-}
+    font-weight: 900; }
+
+.the-brand:after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 12px;
+    left: 689px;
+    bottom: 29%;
+    position: absolute;
+    background: #222222;
+    transition: 0.9s; }
+
+.the-brand:hover:after {
+    height: 18.6%; }
+
+.the-brand:before {
+    content: "";
+    display: block;
+    height: 18.6%;
+    width: 12px;
+    left: 689px;
+    top: 48%;
+    position: absolute;
+    background: #f16d7f;
+    transition: 0.9s; }
+
+.the-brand:hover:before {
+    height: 0; }
+
+.the-brand:hover #the-brand {
+    color: #f16d7f; }
+
+.the-brand:hover #of-luxerious {
+    color: #f16d7f; }
+
+.the-brand:hover #fashion {
+    color: #222222; }
 
 .container-shopwindow {
     width: 100%;

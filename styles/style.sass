@@ -449,9 +449,12 @@ input, button, summary
   flex-direction: column
   text-transform: uppercase
   margin-bottom: 121px
-  border-left: #f16d7f solid 12px
+  padding-bottom: 4px
+  transition: color .2s
+  text-decoration: none
 
 .the-brand h1
+  margin: 0
   letter-spacing: 1px
   font-family: 'Lato', sans-serif
   color: #222222
@@ -461,6 +464,7 @@ input, button, summary
   line-height: 1
 
 .the-brand p
+  margin: 0
   letter-spacing: 1px
   font-family: 'Lato', sans-serif
   color: #222222
@@ -473,7 +477,43 @@ input, button, summary
   color: #f16d7f
   font-size: 39.96px
   font-weight: 900
-  transform: scaleY(1.0009)
+
+
+.the-brand:after
+  content: ""
+  display: block
+  height: 0
+  width: 12px
+  left: 689px
+  bottom: 43%
+  position: absolute
+  background: #222222
+  transition: 0.9s
+
+.the-brand:hover:after
+  height: 12.3%
+
+
+.the-brand:before
+  content: ""
+  display: block
+  height: 12.3%
+  width: 12px
+  left: 689px
+  top: 45%
+  position: absolute
+  background: #f16d7f
+  transition: 0.9s
+
+.the-brand:hover:before
+  height: 0
+
+.the-brand:hover #the-brand
+  color: #f16d7f
+.the-brand:hover  #of-luxerious
+  color: #f16d7f
+.the-brand:hover #fashion
+  color: #222222
 
 .container-shopwindow
   width: 100%
