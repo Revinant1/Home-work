@@ -425,7 +425,7 @@
         </ul>
     </div>
 </nav>
-<section class="container-newarrivals">
+<div class="container-newarrivals">
     <div class="new-warrivals-wrap">
         <div class="new-warrivals-text">
             <h2>New Arrivals</h2>
@@ -434,7 +434,7 @@
             <a href="index.html">Home</a>/<a href="#">Men</a>/<a href="product.html">New Arrivals</a>
         </nav>
     </div>
-</section>
+</div>
 <section class="shopping-cart-blok">
     <div class="shopping-cart-wrap">
         <div class="shopping-cart-header">
@@ -451,7 +451,7 @@
             <div class="shopping-cart-position-img"><a href="#"><img src="img/shopping-card/layer_43.jpg" alt=""></a>
                 <div class="shopping-card-position-img-text">
                     <h3>Mango People T-shirt</h3>
-                    <div class="star"></div>
+                    <div class="shopping-star"></div>
                     <span>Color:<p>Red</p></span>
                     <span>Size:<p>Xll</p></span>
                 </div>
@@ -468,7 +468,7 @@
             <div class="shopping-cart-position-img"><a href="#"><img src="img/shopping-card/layer_44.jpg" alt=""></a>
                 <div class="shopping-card-position-img-text">
                     <h3>Mango People T-shirt</h3>
-                    <div class="star"></div>
+                    <div class="shopping-star"></div>
                     <span>Color:<p>Red</p></span>
                     <span>Size:<p>Xll</p></span>
                 </div>
@@ -485,7 +485,7 @@
             <div class="shopping-cart-position-img"><a href="#"><img src="img/shopping-card/layer_45.jpg" alt=""></a>
                 <div class="shopping-card-position-img-text">
                     <h3>Mango People T-shirt</h3>
-                    <div class="star"></div>
+                    <div class="shopping-star"></div>
                     <span>Color:<p>Red</p></span>
                     <span>Size:<p>Xll</p></span>
                 </div>
@@ -499,6 +499,38 @@
             </div>
         </div>
 
+    </div>
+    <div class="button-shopping-cart-wrap">
+        <button type="submit" class="button-clear-shopping-card">cLEAR SHOPPING CART</button>
+        <button type="submit" class="button-continune-shopping">cONTINUE sHOPPING</button>
+    </div>
+    <div class="form-shopping-csrd-wrap">
+        <form class="form-sopping-card-shipping-adress" id="form-shipping-adress">
+            <h2>Shipping Adress</h2>
+            <details>
+                <summary>Sity</summary>
+                <a href="#">Moscow</a>
+                <a href="#">London</a>
+                <a href="#">Bangladesh</a>
+                <a href="#">New York</a>
+                <a href="#">Prague</a>
+                <a href="#">Oslo</a>
+            </details>
+            <input type="text" value="State" form="form-shipping-adress" id="form-shipping-adress-state">
+            <input type="text" value="Postcode / Zip" form="form-shipping-adress" id="form-shipping-adress-postcode-zip">
+            <button type="submit" form="form-shipping-adress" formmethod="post" id="form-shipping-adress-get-quote">Get a quote</button>
+        </form>
+        <form class="form-sopping-card-coupon-discount" id="form-coupon-discount">
+            <h2>coupon  discount</h2>
+            <p>Enter your coupon code if you have one</p>
+            <input type="text" value="Code" form="form-shipping-adress">
+            <button type="submit" form="form-shipping-adress" formmethod="post">Apply coupon</button>
+        </form>
+        <form class="button-shopping-cart-proceed-to-checkout" id="form-proceed-to-checkout">
+            <p>Sub total: $900</p>
+            <span>GRAND TOTAL: <span class="button-shopping-cart-proceed-to-checkout-900">$900</span></span>
+            <button type="submit" form="form-proceed-to-checkout" formmethod="post">proceed to checkout</button>
+        </form>
     </div>
 </section>
 <section class="container-reviews">

@@ -2019,9 +2019,13 @@ details[open] summary:after
       display: flex
       justify-content: space-between
     .shopping-cart-header p
-        margin-top: 90px
+      margin-top: 90px
     .shopping-cart-header p:last-child
         margin-right: 0
+    .shopping-cart-position-tablica
+      display: flex
+      justify-content: space-between
+      width: 600px
   .shopping-cart-position
     display: flex
     justify-content: space-between
@@ -2032,6 +2036,12 @@ details[open] summary:after
     .shopping-card-position-img-text
       display: flex
       flex-direction: column
+      .shopping-star
+        display: block
+        width: 61px
+        height: 12px
+        margin: 11px 0 15px 0
+        background: url("../img/shopping-card/star.png")
       h3
         color: #222222
         font-family: 'Lato', sans-serif
@@ -2057,29 +2067,212 @@ details[open] summary:after
       font-size: 13px
       font-weight: 400
     input
-      width: 54px
+      width: 43px
       height: 30px
       border: 1px solid #eaeaea
       background-color: #ffffff
-.shopping-cart-position-tablica
-  display: flex
-  justify-content: space-between
-  align-items: center
-  width: 600px
-  .shopping-position-uniteprice
-    margin-left: 20px
-  .shopping-position-quantity
-    margin-left: 9px
-  .shopping-position-shipping
-    margin-right: 10px
-  .shopping-position-subtotal
-    margin-right: 5px
-  .shopping-position-action
-    display: block
-    width: 21px
-    height: 21px
-    background: black
-    margin-right: 16px
-
-
-
+      padding: 0 11px
+    .shopping-cart-position-tablica
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 600px
+      .shopping-position-uniteprice
+        margin-left: 20px
+      .shopping-position-quantity
+        margin-left: 9px
+      .shopping-position-shipping
+        margin-right: 10px
+      .shopping-position-subtotal
+        margin-right: 5px
+      .shopping-position-action
+        display: block
+        width: 21px
+        height: 21px
+        margin-right: 16px
+        position: relative
+      .shopping-position-action:before
+        position: absolute
+        display: block
+        content: ""
+        width: 15px
+        height: 15px
+        background: url("../img/shopping-card/images (1).png")
+        background-size: 15px
+      .shopping-position-action:hover:before
+        display: none
+      .shopping-position-action:after
+        position: absolute
+        content: ""
+        width: 15px
+        height: 15px
+        background: url("../img/shopping-card/images.png")
+        background-size: 15px
+        display: none
+      .shopping-position-action:hover:after
+        display: block
+  .button-shopping-cart-wrap
+    display: flex
+    justify-content: space-between
+    width: 1140px
+    margin: 0 auto
+    padding: 44px 0 63px 0
+    .button-clear-shopping-card
+      width: 235px
+      height: 50px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      color: #4a4a4a
+      font-family: 'Lato', sans-serif
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+    .button-clear-shopping-card:hover
+      background: #f16d7f
+      color: #ffffff
+    .button-continune-shopping
+      width: 225px
+      height: 50px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      color: #4a4a4a
+      font-family: 'Lato', sans-serif
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+    .button-continune-shopping:hover
+      background: #f16d7f
+      color: #ffffff
+  .form-shopping-csrd-wrap
+    width: 1140px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    h2
+      color: #222222
+      font-family: 'Lato', sans-serif
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      margin-bottom: 22px
+    .form-sopping-card-shipping-adress
+      display: flex
+      flex-direction: column
+      details
+        width: 355px
+        height: 45px
+        border: 1px solid #eaeaea
+        background-color: #ffffff
+        summary
+          color: #b1b1b1
+          font-family: 'Lato', sans-serif
+          font-size: 13px
+          font-weight: 300
+          padding: 0 18px
+        a
+          color: #b1b1b1
+          font-family: 'Lato', sans-serif
+          font-size: 13px
+          font-weight: 300
+          text-decoration: none
+          padding: 0 18px
+      input
+        box-sizing: border-box
+        width: 355px
+        height: 45px
+        border: 1px solid #eaeaea
+        background-color: #ffffff
+        padding: 0 18px
+        color: #b1b1b1
+        font-family: 'Lato', sans-serif
+        font-size: 13px
+        font-weight: 300
+      #form-shipping-adress-state
+        margin: 20px 0
+      button
+        width: 100px
+        height: 35px
+        border: 1px solid #eaeaea
+        background-color: #ffffff
+        color: #4a4a4a
+        font-family: 'Lato', sans-serif
+        font-size: 11px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 23px 0 80px 0
+      button:hover
+        background: #f16d7f
+        color: #ffffff
+    .form-sopping-card-coupon-discount
+      display: flex
+      flex-direction: column
+      p
+        color: #000000
+        font-family: 'Lato', sans-serif
+        font-size: 14px
+        font-weight: 300
+      input
+        box-sizing: border-box
+        width: 355px
+        height: 45px
+        border: 1px solid #eaeaea
+        background-color: #ffffff
+        padding: 0 18px
+        color: #b1b1b1
+        font-family: 'Lato', sans-serif
+        font-size: 13px
+        font-weight: 300
+        margin: 25px 0
+      button
+        width: 118px
+        height: 35px
+        border: 1px solid #eaeaea
+        background-color: #ffffff
+        color: #4a4a4a
+        font-family: 'Lato', sans-serif
+        font-size: 11px
+        font-weight: 700
+        text-transform: uppercase
+      button:hover
+        background: #f16d7f
+        color: #ffffff
+    .button-shopping-cart-proceed-to-checkout
+      display: flex
+      flex-direction: column
+      background: #f5f3f3
+      padding: 0 43px
+      margin-bottom: 139px
+      text-align: right
+      p
+        color: #4a4a4a
+        font-family: 'Lato', sans-serif
+        font-size: 11px
+        font-weight: 400
+        text-transform: uppercase
+        margin-top: 40px
+      span
+        display: inline-block
+        color: #222222
+        font-family: 'Lato', sans-serif
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 14px 0
+        .button-shopping-cart-proceed-to-checkout-900
+          color: #f16d7f
+          font-family: 'Lato', sans-serif
+          font-size: 16px
+          font-weight: 700
+          text-transform: uppercase
+      button
+        width: 273px
+        height: 50px
+        background-color: #f16d7f
+        color: #ffffff
+        font-family: 'Lato', sans-serif
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+      button:hover
+        background: #ffffff
+        color: #f16d7f
